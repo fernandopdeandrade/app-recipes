@@ -1,0 +1,111 @@
+[
+  {
+    "_id": "f1faf1cc-d8a1-498e-ae54-4ae30ffb449d",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Criar uma transferência",
+    "url": "http://localhost:3001/transfer",
+    "method": "POST",
+    "sortNum": 5000,
+    "created": "2022-11-11T09:05:07.717Z",
+    "modified": "2022-11-11T09:09:48.684Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"payByPerson\": \"Abreu\",\n  \"payToPerson\": \"Pompeu\",\n  \"amount\": 40,\n  \"key\": \"187.401.600-33\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4e96b52d-08c9-4d0e-a4c1-cc760a5b398e",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Alterar o status de uma transferência",
+    "url": "http://localhost:3001/transfer/ESCREVA_O_ID_AQUI",
+    "method": "PATCH",
+    "sortNum": 8750,
+    "created": "2022-11-11T09:05:07.718Z",
+    "modified": "2022-11-11T09:05:07.718Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"key\": \"187.401.600-33\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dd0e923a-f142-4e3c-9623-ada5cccdd6fa",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Cria chave CPF",
+    "url": "http://localhost:3001/key/register",
+    "method": "POST",
+    "sortNum": 18750,
+    "created": "2022-11-11T09:05:07.719Z",
+    "modified": "2022-11-11T09:05:07.719Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"value\": \"187.401.600-33\",\n  \"owner\": \"Pompeu\",\n  \"type\": \"cpf\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "747e74aa-e79e-4c27-ab68-c5bf4c8346b5",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Cria chave Phone Number",
+    "url": "http://localhost:3001/key/register",
+    "method": "POST",
+    "sortNum": 38750,
+    "created": "2022-11-11T09:05:07.720Z",
+    "modified": "2022-11-11T09:05:07.720Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"value\": \"+55 (48) 987231570\",\n  \"owner\": \"Nancy Ayala\",\n  \"type\": \"phonenumber\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "da6b6bec-79dc-4dfb-bba5-be65d5b9e11f",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Cria chave Mail",
+    "url": "http://localhost:3001/key/register",
+    "method": "POST",
+    "sortNum": 48750,
+    "created": "2022-11-11T09:05:07.721Z",
+    "modified": "2022-11-11T09:05:07.721Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"value\": \"nancyayala_dev@gmail.com\",\n  \"owner\": \"Nancy Ayala\",\n  \"type\": \"mail\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e051f914-c323-4922-ae92-6f37b4a38830",
+    "colId": "811ca7ed-6c97-4521-8619-4f48424c8071",
+    "containerId": "",
+    "name": "Listar Chaves por Value",
+    "url": "http://localhost:3001/key/nancyayala_dev@gmail.com",
+    "method": "GET",
+    "sortNum": 68750,
+    "created": "2022-11-11T09:05:07.723Z",
+    "modified": "2022-11-11T09:05:07.723Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]

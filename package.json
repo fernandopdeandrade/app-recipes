@@ -1,0 +1,32 @@
+{
+  "name": "back-fron-easy-to-do",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "restart-db": "npm run compose:down && npm run create-population-db",
+    "create-population-db": "npm run compose:up && npm run cp-db-container && npm run exec-db-container",
+    "cp-db-container": "npm run cp-users && npm run cp-meals && npm run cp-drinks && npm run cp-drinksCategory && npm run cp-mealsCategory",
+    "exec-db-container": "npm run exec-users && npm run exec-meals && npm run exec-drinks && npm run exec-drinksCategory && npm run exec-mealsCategory",
+    "install-front": "cd app/front-end && npm install",
+    "install-back": "cd app/back-end && npm install",
+    "back": "cd app/back-end && npm run dev",
+    "front": "cd app/front-end && npm start",
+    "compose:up": "cd app && docker-compose up -d --build",
+    "compose:down": "cd app && docker-compose down --remove-orphans",
+    "logs": "cd app && docker-compose logs -f",
+    "cp-users": "docker cp db/users.json mongodb-app-recipes:/tmp/users.json",
+    "cp-meals": "docker cp db/meals.json mongodb-app-recipes:/tmp/meals.json",
+    "cp-drinks": "docker cp db/drinks.json mongodb-app-recipes:/tmp/drinks.json",
+    "cp-drinksCategory": "docker cp db/drinksCategory.json mongodb-app-recipes:/tmp/drinksCategory.json",
+    "cp-mealsCategory": "docker cp db/mealsCategory.json mongodb-app-recipes:/tmp/mealsCategory.json",
+    "exec-users": "docker exec -it mongodb-app-recipes mongoimport -d app-recipes -c users --file /tmp/users.json --jsonArray",
+    "exec-meals": "docker exec -it mongodb-app-recipes mongoimport -d app-recipes -c meals --file /tmp/meals.json --jsonArray",
+    "exec-drinks": "docker exec -it mongodb-app-recipes mongoimport -d app-recipes -c drinks --file /tmp/drinks.json --jsonArray",
+    "exec-drinksCategory": "docker exec -it mongodb-app-recipes mongoimport -d app-recipes -c drinks-categories --file /tmp/drinksCategory.json --jsonArray",
+    "exec-mealsCategory": "docker exec -it mongodb-app-recipes mongoimport -d app-recipes -c meals-categories --file /tmp/mealsCategory.json --jsonArray"
+  },
+  "keywords": [],
+  "author": "Fernando Andrade",
+  "license": "ISC"
+}

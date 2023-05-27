@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Fernando Andrade",
+    "role": "admin",
+    "email": "pupy@gmail.com",
+    "password": "$2a$10$Aj/S3TWvDjP1BJfCX0He1e/fQZ6kA1PAKNLPGZhZfWdC5Ha18tdUG"
+  },
+  {
+    "username": "Rodrigo Andrade",
+    "role": "user",
+    "email": "digo@gmail.com",
+    "password": "$2a$10$2arwupZSvrKuyioE5BU4sunvWEdVIuCWsMO4PTS9qGfII6Q.aK9ge"
+  },
+  {
+    "username": "Adriano Andrade",
+    "role": "user",
+    "email": "dri@gmail.com",
+    "password": "$2a$10$yqsDF90ZAW4cGVI74ofjgeP4R9HCYrlVOej81ta.F8mwveFPawDbS"
+  }
+]

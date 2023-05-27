@@ -1,0 +1,347 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "app-recipes",
+    "dateExported": "2023-05-27T21:45:22.619Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b07e3987-bf72-4dfe-a51c-0031841bc385",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Login para gerar token",
+            "url": "http://localhost:3001/login",
+            "method": "POST",
+            "sortNum": 78750,
+            "created": "2023-05-20T19:47:48.388Z",
+            "modified": "2023-05-27T19:41:29.500Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"pupy@gmail.com\",\n  \"password\": \"pupy123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3df613b-db2c-4720-8eb0-93dbb0093ec2",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Login após token gerado",
+            "url": "http://localhost:3001/login/role",
+            "method": "GET",
+            "sortNum": 88750,
+            "created": "2023-05-20T19:54:20.619Z",
+            "modified": "2023-05-20T23:58:31.253Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8e01f45b-bd30-4fe9-8e78-3121a5a74e63",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as comidas",
+            "url": "http://localhost:3001/meals",
+            "method": "GET",
+            "sortNum": 93750,
+            "created": "2023-05-22T16:17:03.544Z",
+            "modified": "2023-05-22T16:17:26.438Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cdbba93c-1cd5-4cb2-991f-e4eccfc7c282",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as categorias de comidas",
+            "url": "http://localhost:3001/meals-category",
+            "method": "GET",
+            "sortNum": 94375,
+            "created": "2023-05-24T11:48:53.148Z",
+            "modified": "2023-05-24T12:04:52.293Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb0ed71f-4503-4dd6-8c1c-82ae754b245f",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as categorias de bebidas",
+            "url": "http://localhost:3001/drinks-category",
+            "method": "GET",
+            "sortNum": 94687.5,
+            "created": "2023-05-24T12:05:56.472Z",
+            "modified": "2023-05-24T12:06:19.230Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "438d4502-285f-4c3d-ac02-f14bac4382e6",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as bebidas",
+            "url": "http://localhost:3001/drinks",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2023-05-22T19:32:49.068Z",
+            "modified": "2023-05-22T19:33:24.899Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3558ae4a-bdee-414e-80b1-f319766aa8af",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma comida pelo id",
+            "url": "http://localhost:3001/meal/53071",
+            "method": "GET",
+            "sortNum": 96250,
+            "created": "2023-05-22T16:30:41.450Z",
+            "modified": "2023-05-25T01:30:28.445Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6f47407c-a865-40af-b258-527aea169be6",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma comida pelo nome",
+            "url": "http://localhost:3001/drink/name/ABC",
+            "method": "GET",
+            "sortNum": 96562.5,
+            "created": "2023-05-26T13:52:13.963Z",
+            "modified": "2023-05-27T00:25:56.049Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "156b87a9-8523-492b-aea6-209eeabaf652",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma bebida pelo nome",
+            "url": "http://localhost:3001/meal/name/Beef Asado",
+            "method": "GET",
+            "sortNum": 96640.6,
+            "created": "2023-05-27T00:24:35.548Z",
+            "modified": "2023-05-27T00:24:35.548Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6c453b98-9e53-4db7-a950-202b814f7b5c",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma comida pela primeira letra do nome",
+            "url": "http://localhost:3001/meal/letter/s",
+            "method": "GET",
+            "sortNum": 96718.8,
+            "created": "2023-05-26T14:03:38.963Z",
+            "modified": "2023-05-26T16:41:26.192Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "27c98d4f-3dbb-4a3e-88a7-c5a002ee26a1",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma bebida pela primeira letra do nome",
+            "url": "http://localhost:3001/drink/letter/a",
+            "method": "GET",
+            "sortNum": 96796.9,
+            "created": "2023-05-27T00:22:33.877Z",
+            "modified": "2023-05-27T00:26:11.117Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21f268e9-ed5b-4c48-bca7-fc3cd8035adb",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as comidas de acordo com o nome da categoria",
+            "url": "http://localhost:3001/meal/category/Dessert",
+            "method": "GET",
+            "sortNum": 96875,
+            "created": "2023-05-24T13:58:38.410Z",
+            "modified": "2023-05-24T14:21:51.515Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d2b8524e-66e1-4d20-958b-7eaff820f4fd",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar todas as bebidas de acordo com o nome da categoria",
+            "url": "http://localhost:3001/drink/category/Ordinary Drink",
+            "method": "GET",
+            "sortNum": 97187.5,
+            "created": "2023-05-24T14:29:00.452Z",
+            "modified": "2023-05-24T17:57:48.242Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fa16d9d9-3fd3-4633-8cc1-178f10ae36d1",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Buscar uma  bebida pelo id",
+            "url": "http://localhost:3001/drink/11255",
+            "method": "GET",
+            "sortNum": 97500,
+            "created": "2023-05-22T19:33:01.811Z",
+            "modified": "2023-05-25T01:13:26.413Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "133e41ca-f920-4ace-9186-02f2025b708b",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Registrar novo usuário",
+            "url": "http://localhost:3001/register",
+            "method": "POST",
+            "sortNum": 98750,
+            "created": "2023-05-21T21:11:35.703Z",
+            "modified": "2023-05-21T21:43:16.582Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Fernando\",\n  \"role\": \"admin\",\n  \"email\": \"pupy@gmail.com\",\n  \"password\": \"pupy123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0916f89-081f-40be-b535-1669bb90edf8",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Criar nova comida",
+            "url": "http://localhost:3001/create/meal",
+            "method": "POST",
+            "sortNum": 108750,
+            "created": "2023-05-22T15:09:55.884Z",
+            "modified": "2023-05-22T23:26:27.624Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"idMeal\": \"11113\",\n    \"strMeal\": \"Ovo frito na pedra\",\n    \"strCategory\": \"Coisas boas de fritar\",\n    \"strArea\": \"Brasil com certeza\",\n    \"strInstructions\": \"Bota na pedra, com sol quente do verão e táca-le o pau\",\n    \"strMealThumb\": \"https://www.themealdb.com/images/media/meals/1529444830.jpg\",\n    \"strYoutube\": \"https://www.youtube.com/watch?v=ZT9LSsNXXe0\",\n    \"strIngredient1\": \"Beef\",\n    \"strIngredient2\": \"Salt\",\n    \"strIngredient3\": \"Pepper\",\n    \"strIngredient4\": \"Sesame Seed Oil\",\n    \"strIngredient5\": \"Egg\",\n    \"strIngredient6\": \"Starch\",\n    \"strIngredient7\": \"Oil\",\n    \"strIngredient8\": \"Noodles\",\n    \"strIngredient9\": \"Onion\",\n    \"strIngredient10\": \"Minced Garlic\",\n    \"strIngredient11\": \"Ginger\",\n    \"strIngredient12\": \"Bean Sprouts\",\n    \"strIngredient13\": \"Mushrooms\",\n    \"strIngredient14\": \"Water\",\n    \"strIngredient15\": \"Oyster Sauce\",\n    \"strIngredient16\": \"Sugar\",\n    \"strIngredient17\": \"Soy Sauce\",\n    \"strIngredient18\": \"\",\n    \"strIngredient19\": \"\",\n    \"strIngredient20\": \"\",\n    \"strMeasure1\": \"1/2 lb\",\n    \"strMeasure2\": \"pinch\",\n    \"strMeasure3\": \"pinch\",\n    \"strMeasure4\": \"2 tsp\",\n    \"strMeasure5\": \"1/2 \",\n    \"strMeasure6\": \"3 tbs\",\n    \"strMeasure7\": \"5 tbs\",\n    \"strMeasure8\": \"1/4 lb\",\n    \"strMeasure9\": \"1/2 cup \",\n    \"strMeasure10\": \"1 tsp \",\n    \"strMeasure11\": \"1 tsp \",\n    \"strMeasure12\": \"1 cup \",\n    \"strMeasure13\": \"1 cup \",\n    \"strMeasure14\": \"1 cup \",\n    \"strMeasure15\": \"1 tbs\",\n    \"strMeasure16\": \"1 tsp \",\n    \"strMeasure17\": \"1 tsp \",\n    \"strMeasure18\": \"\",\n    \"strMeasure19\": \"\",\n    \"strMeasure20\": \"\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "20615a81-3d50-4901-86f6-70792ce9fae5",
+            "colId": "ac1465da-3cf2-4ca9-ae6b-22caa26708ed",
+            "containerId": "",
+            "name": "Criar nova bebida",
+            "url": "http://localhost:3001/create/drink",
+            "method": "POST",
+            "sortNum": 118750,
+            "created": "2023-05-22T19:44:10.557Z",
+            "modified": "2023-05-22T20:09:27.254Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjQ2OTBiOTMwY2MzNjc2MjFhMmFkMmI2IiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6IkFkbWluIn0sImlhdCI6MTY4NDYyNzAwNSwiZXhwIjoxNjg1MjMxODA1fQ.u5QQevKJw6qH4lpwStm_55TRoa9pCe0DOczOw6VI_7s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"idDrink\": \"11111\",\n    \"strDrink\": \"Suco de limão\",\n    \"strCategory\": \"Sucos daudáveis\",\n    \"strArea\": \"Brasileiro até de mais\",\n    \"strAlcoholic\": \"Não alcoolico, ao menos que você faça uma caipirinha.\",\n    \"strGlass\": \"Cocktail glass\",\n    \"strInstructions\": \"Taca limão na jarra e espreme. Coloca açucar da sua preferência. Se quiser pode encher de cachaça, o problema é seu e da sua mulher em casa kkkk.\",\n    \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg\",\n    \"strYoutube\": \"https://www.youtube.com/watch?v=9QUhRXEBY8o&ab_channel=MetidaaGourmet\",\n    \"strIngredient1\": \"Dry Vermouth\",\n    \"strIngredient2\": \"Gin\",\n    \"strIngredient3\": \"Anis\",\n    \"strIngredient4\": \"Bitters\",\n    \"strIngredient5\": \"Orange peel\",\n    \"strIngredient6\": null,\n    \"strIngredient7\": null,\n    \"strIngredient8\": null,\n    \"strIngredient9\": null,\n    \"strIngredient10\": null,\n    \"strIngredient11\": null,\n    \"strIngredient12\": null,\n    \"strIngredient13\": null,\n    \"strIngredient14\": null,\n    \"strIngredient15\": null,\n    \"strMeasure1\": \"1 oz \",\n    \"strMeasure2\": \"1 oz \",\n    \"strMeasure3\": \"1/4 tsp \",\n    \"strMeasure4\": \"2 dashes \",\n    \"strMeasure5\": \"Twist of \",\n    \"strMeasure6\": null,\n    \"strMeasure7\": null,\n    \"strMeasure8\": null,\n    \"strMeasure9\": null,\n    \"strMeasure10\": null,\n    \"strMeasure11\": null,\n    \"strMeasure12\": null,\n    \"strMeasure13\": null,\n    \"strMeasure14\": null,\n    \"strMeasure15\": null,\n    \"strImageSource\": null,\n    \"strImageAttribution\": null\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
