@@ -33,11 +33,11 @@ algumas funcionalidades do site, como a criação de novos produtos, por exemplo
 MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongodb.net/"
 
 - ARQUIVO .env
--- ADMIN_EMAIL="pupy@gmail.com"
--- ADMIN_PASSWORD="pupy123456"
--- JWT_SECRET="secret"
--- PORT=3001
--- MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0..."
+- ADMIN_EMAIL="pupy@gmail.com"
+- ADMIN_PASSWORD="pupy123456"
+- JWT_SECRET="secret"
+- PORT=3001
+- MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0..."
 </details>
 
 ## Lista de endpoints
