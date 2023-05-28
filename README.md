@@ -13,30 +13,31 @@ link do app = https://front-end-app-recipes.vercel.app/
 algumas funcionalidades do site, como a criação de novos produtos, por exemplo, serão apenas usuários clientes.
 
 </details>
-  <summary>ARQUIVO .env</summary>
-  
+
+
+<summary>ARQUIVO .env</summary>
 ## Configurações do banco de dados e do back-end, arquivo '.env' necessário para rodar o projeto
 
 <details>
 - Esse email e senha são para logar no admin do site, você pode alterar se quiser.
-ADMIN_EMAIL="pupy@gmail.com"
-ADMIN_PASSWORD="pupy123456"
+- ADMIN_EMAIL="pupy@gmail.com"
+- ADMIN_PASSWORD="pupy123456"
 
 - Essa palavra secreta é para gerar o token de autenticação, você pode alterar se quiser também.
-JWT_SECRET="secret"
+- JWT_SECRET="secret"
 
 - Porta do back-end, você pode alterar se quiser.
-PORT=3001
+- PORT=3001
 
 - Url do banco de dados, se quiser usar o banco de dados local, basta alterar a url para => mongodb://localhost:27017/recipes-app
-MONGO_DB_URL="mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0.vu5bq4e.mongodb.net/"
+MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongodb.net/"
 
 - ARQUIVO .env
-ADMIN_EMAIL="pupy@gmail.com"
-ADMIN_PASSWORD="pupy123456"
-JWT_SECRET="secret"
-PORT=3001
-MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0..."
+-- ADMIN_EMAIL="pupy@gmail.com"
+-- ADMIN_PASSWORD="pupy123456"
+-- JWT_SECRET="secret"
+-- PORT=3001
+-- MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0..."
 </details>
 
 ## Lista de endpoints
