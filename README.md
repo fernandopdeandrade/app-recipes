@@ -44,3 +44,5 @@ MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongod
 ```bash
   Alguns endpoints estão no arquivo app-recipes.json, você pode importar esse arquivo no insomnia ou postman ou thunder-client, para testar os endpoints.
 ```
+## As rotas usadas no projeto estão no arquivo app-recipes.jason
+- è só importar as rotas no thunder client, insomnia etc...
