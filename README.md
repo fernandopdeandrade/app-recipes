@@ -32,5 +32,5 @@ algumas funcionalidades do site, como a criação de novos produtos, por exemplo
 ```bash
   Alguns endpoints estão no arquivo app-recipes.json, você pode importar esse arquivo no insomnia ou postman ou thunder-client, para testar os endpoints.
 ```
-## As rotas usadas no projeto estão no arquivo app-recipes.jason
+## As rotas usadas no projeto estão no arquivo app-recipes.json
 - è só importar as rotas no thunder client, insomnia etc...
