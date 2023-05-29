@@ -13,26 +13,14 @@ link do app = https://front-end-app-recipes.vercel.app/
 algumas funcionalidades do site, como a criação de novos produtos, por exemplo, serão apenas usuários clientes.
 
 </details>
-
-
 <summary>ARQUIVO .env</summary>
 ## Configurações do banco de dados e do back-end, arquivo '.env' necessário para rodar o projeto
-
 <details>
-- Esse email e senha são para logar no admin do site, você pode alterar se quiser.
-- ADMIN_EMAIL="seu-email-admin"
-- ADMIN_PASSWORD="sua-senha-admin"
-
-- Essa palavra secreta é para gerar o token de autenticação, você pode alterar se quiser também.
-- JWT_SECRET="secret"
-
-- Porta do back-end, você pode alterar se quiser.
-- PORT=3001
 
 - Url do banco de dados, se quiser usar o banco de dados local, basta alterar a url para => mongodb://localhost:27017/recipes-app
-MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongodb.net/"
-
-- ARQUIVO .env
+  
+- ou usar seu cluster = MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongodb.net/"
+  
 - ADMIN_EMAIL="email-que-será-o-admin"
 - ADMIN_PASSWORD="senha-que-será-o-admin"
 - JWT_SECRET="palavra-secreta-para-geração-do-token-de-autenticação"
