@@ -20,8 +20,8 @@ algumas funcionalidades do site, como a criação de novos produtos, por exemplo
 
 <details>
 - Esse email e senha são para logar no admin do site, você pode alterar se quiser.
-- ADMIN_EMAIL="pupy@gmail.com"
-- ADMIN_PASSWORD="pupy123456"
+- ADMIN_EMAIL="seu-email-admin"
+- ADMIN_PASSWORD="sua-senha-admin"
 
 - Essa palavra secreta é para gerar o token de autenticação, você pode alterar se quiser também.
 - JWT_SECRET="secret"
@@ -37,7 +37,7 @@ MONGO_DB_URL="mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0.vu5bq4e.mongod
 - ADMIN_PASSWORD="senha-que-será-o-admin"
 - JWT_SECRET="palavra-secreta-para-geração-do-token-de-autenticação"
 - PORT=3001
-- MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://<nome-aqui>:<sua-senha-aqui>@cluster0..."
+- MONGO_DB_URL="mongodb://localhost:27017/recipes-app" OU "mongodb+srv://"nome-aqui":"sua-senha-aqui"@cluster0..."
 </details>
 
 ## Lista de endpoints
